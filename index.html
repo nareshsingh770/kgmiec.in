@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css" />
     <title>KGMIEC - Home</title>
     <!-- Swiper CSS -->
@@ -16,10 +16,11 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="relative z-10 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav class="sticky top-0 z-50 bg-white border-b-2">
+        <div class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="./assets/KGM-Logo.png" alt="Flowbite Logo" />
+                <img id="navbar-logo" class="transition-all duration-300 w-20" src="./assets/images/KGM-Logo.png"
+                    alt="Logo" />
                 <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
             </a>
             <button id="hamburger-btn" data-collapse-toggle="navbar-dropdown" type="button"
@@ -35,14 +36,14 @@
             <div class="fixed inset-0 z-40 bg-white p-4 transform -translate-x-full transition-transform duration-300 ease-in-out md:translate-x-0 md:static md:inset-auto md:z-auto md:bg-transparent md:p-0 md:block md:w-auto"
                 id="navbar-dropdown">
                 <button id="closeMenu" class="md:hidden mb-4">Close</button>
-                <ul class="flex flex-col font-medium md:flex-row md:mt-0 md:p-0 md:space-x-8 mt-4 rtl:space-x-reverse">
-                    <li>
-                        <a href="#" class="block text-gray-700 hover:text-blue-700 p-2" aria-current="page">Home</a>
+                <ul class="flex flex-col font-medium md:flex-row md:mt-0 md:p-0">
+                    <li class="mx-2">
+                        <a href="/" class="block text-gray-700 hover:text-blue-700 p-2" aria-current="page">Home</a>
                     </li>
-                    <li>
-                        <a href="#" class="block text-gray-700 hover:text-blue-700 p-2">Gallery</a>
+                    <li class="mx-2">
+                        <a href="/gallery.html" class="block text-gray-700 hover:text-blue-700 p-2">Gallery</a>
                     </li>
-                    <li>
+                    <li class="mx-2">
                         <div class="relative dropdown inline-block text-left p-2">
                             <!-- Trigger button -->
                             <button class="inline-flex items-center font-medium text-gray-700 hover:text-blue-700">
@@ -55,56 +56,54 @@
                             </button>
                             <!-- Dropdown menu -->
                             <div
-                                class="dropdown-menu absolute bg-white dark:bg-gray-700 left-0 mt-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-44 z-20">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                class="dropdown-menu absolute bg-white left-0 mt-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-44 z-20">
+                                <ul class="py-2 text-sm text-gray-000">
                                     <li>
                                         <a href="https://kaushalbharat.gov.in/"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">DDU-GKY</a>
+                                            class="block px-4 py-2 hover:bg-blue-600 hover:text-white">DDU-GKY</a>
                                     </li>
                                     <li>
                                         <a href="https://esdm-skill.deity.gov.in/(S(s1tor41fgk0zraukkuq0az13))/default.aspx"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ESDM</a>
+                                            class="block px-4 py-2 hover:bg-blue-600 hover:text-white">ESDM</a>
                                     </li>
                                     <li>
                                         <a href="https://nsdcindia.org/pmvishwakarma.html"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PM Vishwakarma (PMVK)</a>
+                                            class="block px-4 py-2 hover:bg-blue-600 hover:text-white">PM Vishwakarma
+                                            (PMVK)</a>
                                     </li>
                                     <li>
                                         <a href="https://nsdcindia.org/seekhoaurkamao"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Seekho aur Kamao</a>
+                                            class="block px-4 py-2 hover:bg-blue-600 hover:text-white">Seekho aur
+                                            Kamao</a>
                                     </li>
                                 </ul>
-                                <div class="py-1 border-t border-gray-100 dark:border-gray-600">
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                        out</a>
-                                </div>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="mx-2">
                         <a href="#" class="block text-gray-700 hover:text-blue-700 p-2">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/slider-img/Banner1.jpeg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner1.jpeg" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/slider-img/Banner2.jpg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner2.jpg" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/slider-img/Banner3.jpeg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner3.jpeg" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/slider-img/Banner4.jpg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner4.jpg" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/slider-img/Banner5.jpg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner5.jpg" alt="slider images" />
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -135,8 +134,7 @@
                     </a>
                 </div>
                 <div>
-                    <img src="./assets/about-us.jpg"
-                        class="rounded" alt="" />
+                    <img src="./assets/images/about-us.jpg" class="rounded" alt="" />
                 </div>
             </div>
     </section>
@@ -149,13 +147,14 @@
         <div class="max-w-4xl mx-auto bg-white shadow-md rounded-xl p-8">
             <div class="flex flex-col md:flex-row items-center gap-6 mb-7 items-center">
                 <!-- Director's image -->
-                <img class="w-16 h-16 rounded-full object-cover ring-4 ring-blue-500" src="./assets/profile.png"
+                <img class="w-16 h-16 rounded-full object-cover ring-4 ring-blue-500" src="./assets/images/profile.png"
                     alt="Director Photo" />
 
                 <div>
                     <!-- Name & Title -->
-                    <h2 class="md:text-xl text-sm md:text-left text-center font-medium text-gray-900 dark:text-white">Dr. Jane Smith</h2>
-                    <p class="text-sm text-gray-400 md:text-left text-center mb-4">Director, XYZ Institute</p>
+                    <h2 class="md:text-xl text-sm md:text-left text-center font-medium text-gray-900">
+                        Dr. Jane Smith</h2>
+                    <p class="text-sm text-gray-400 md:text-left text-center">Director, XYZ Institute</p>
                 </div>
             </div>
             <div class="message">
@@ -259,13 +258,13 @@
                 <h2
                     class="md:text-3xl border-l-4 border-blue-400 text-xl pl-2 font-medium tracking-tight text-gray-900 mb-7">
                     KGM Presence</h2>
-                <img src="./assets/pan-india.png" alt='india map' class="w-full" />
+                <img src="./assets/images/pan-india.png" alt='india map' class="w-full" />
             </div>
             <div class="bg-blue-100 p-4">
                 <h2
                     class="md:text-3xl border-l-4 border-blue-400 text-xl pl-2 font-medium tracking-tight text-gray-900 mb-7">
                     Placement Partners</h2>
-                <img src="./assets/placement-partner.jpg" alt='india map' class="w-full" />
+                <img src="./assets/images/placement-partner.jpg" alt='india map' class="w-full" />
             </div>
         </div>
     </section>
@@ -277,24 +276,28 @@
         <div class="overflow-hidden whitespace-nowrap bg-blue-100 py-2">
             <div class="marquee text-gray-800 font-medium">
                 <div class="flex gap-8 items-center">
-                    <img class="w-28" src="./assets/affiliations/block1.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/block2.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/block3.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/DDUGKY.jpg" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/download.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/HSRLM.jpeg" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-1.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-2.jpg" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-3.jpg" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-4.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-5.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-6.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/img-7.png" alt="logo-affiliations"/>
-                    <img class="w-28" src="./assets/affiliations/lsc.png" alt="logo-affiliations"/>
+                    <img class="w-28" src="./assets/images/affiliations/block1.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/block2.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/block3.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/DDUGKY.jpg" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/download.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/HSRLM.jpeg" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-1.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-2.jpg" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-3.jpg" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-4.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-5.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-6.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-7.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/lsc.png" alt="logo-affiliations" />
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="bg-gray-100 p-4">
+        <h4 class="text-grey-400 text-sm text-center">© 2022. KGMIEC. All rights reserved.</h4>
+    </footer>
     <script>
         const swiper = new Swiper('.swiper', {
             loop: true,
@@ -310,7 +313,21 @@
     <!-- Dropdown menu JS -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            
+            
+            
+            // COMMON SCRIPT
+            const logo = document.getElementById('navbar-logo');
 
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    logo.classList.remove('w-20');
+                    logo.classList.add('w-12');
+                } else {
+                    logo.classList.remove('w-12');
+                    logo.classList.add('w-20');
+                }
+            });
             const menuToggle = document.getElementById("hamburger-btn");
             const closeMenu = document.getElementById("closeMenu");
             const drawer = document.getElementById("navbar-dropdown");
