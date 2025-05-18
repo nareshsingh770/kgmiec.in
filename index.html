@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Your Study, Your Future our Priority">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./assets/style.css" />
     <title>KGMIEC - Home</title>
     <!-- Swiper CSS -->
@@ -15,14 +17,22 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white border-b-2">
-        <div class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-4">
+
+    <section class="max-w-screen-xl mx-auto p-4 background-header">
+        <div class="">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img id="navbar-logo" class="transition-all duration-300 w-20" src="./assets/images/KGM-Logo.png"
+                <div class="flex flex-col items-center w-28">
+                    <img id="navbar-logo" class="transition-all duration-300 w-28" src="./assets/images/KGM-Logo.webp"
                     alt="Logo" />
-                <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+                    <span class="tag-line mt-2 text-center">Your Study, Your Future our Priority</span>
+                </div>
+                <span class="self-center text-sm md:text-xl font-semibold md:w-1/3 w-full">KGM Immigration & Educational Consultants Private Limited</span>
             </a>
+        </div>
+    </section>
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 border-b-2 bg-blue-100">
+        <div class="relative max-w-screen-xl flex flex-wrap items-center justify-end mx-auto px-4">
             <button id="hamburger-btn" data-collapse-toggle="navbar-dropdown" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-dropdown" aria-expanded="false">
@@ -38,7 +48,7 @@
                 <button id="closeMenu" class="md:hidden mb-4">Close</button>
                 <ul class="flex flex-col font-medium md:flex-row md:mt-0 md:p-0">
                     <li class="mx-2">
-                        <a href="/" class="block text-gray-700 hover:text-blue-700 p-2" aria-current="page">Home</a>
+                        <a href="/" class="block text-blue-700 p-2" aria-current="page">Home</a>
                     </li>
                     <li class="mx-2">
                         <a href="/gallery.html" class="block text-gray-700 hover:text-blue-700 p-2">Gallery</a>
@@ -67,6 +77,10 @@
                                             class="block px-4 py-2 hover:bg-blue-600 hover:text-white">ESDM</a>
                                     </li>
                                     <li>
+                                        <a href="https://www.skillindiadigital.gov.in/pmkvy-dashboard"
+                                            class="block px-4 py-2 hover:bg-blue-600 hover:text-white">PMKVY</a>
+                                    </li>
+                                    <li>
                                         <a href="https://nsdcindia.org/pmvishwakarma.html"
                                             class="block px-4 py-2 hover:bg-blue-600 hover:text-white">PM Vishwakarma
                                             (PMVK)</a>
@@ -81,49 +95,51 @@
                         </div>
                     </li>
                     <li class="mx-2">
-                        <a href="#" class="block text-gray-700 hover:text-blue-700 p-2">Contact</a>
+                        <a href="/contact.html" class="block text-gray-700 hover:text-blue-700 p-2">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="swiper">
+    <section class="max-w-screen-xl mx-auto">
+        <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/images/slider-img/Banner1.jpeg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner1.webp" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/images/slider-img/Banner2.jpg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner2.webp" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/images/slider-img/Banner3.jpeg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner3.webp" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/images/slider-img/Banner4.jpg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner4.webp" alt="slider images" />
             </div>
             <div class="swiper-slide">
-                <img class="w-full" src="./assets/images/slider-img/Banner5.jpg" alt="slider images" />
+                <img class="w-full" src="./assets/images/slider-img/Banner5.webp" alt="slider images" />
             </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+    </section>
     <!-- ABOUT US -->
-    <section class="max-w-screen-xl mx-auto p-4 about-us mt-20">
+    <section class="max-w-screen-xl mx-auto p-4 about-us mt-10">
         <h2 class="md:text-3xl text-xl text-center font-medium tracking-tight text-gray-900 mb-7">
             About KGM Immigration & Educational Consultants Pvt Ltd</h1>
-            <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
-                <div class="md:col-span-2">
-                    <p class="mb-6 md:text-lg text-sm font-normal text-gray-500">Here at
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-4">
+                <div class="md:col-span-3">
+                    <p class="mb-6 md:text-[0.95rem] text-sm font-normal text-gray-500 leading-[1.7]">Here at
                         KGM Immigration & Educational Consultants Pvt Ltd (KGMIEC) has been India’s leading provider of
                         educational content development since 2011. KGMIEC focuses on the skill development and
                         vocational
                         training landscape, building a skilled manpower pool to meet global industry requirements. The
                         company is also one of the largest skill providers, offering training in skill development,
                         consulting, recruitment, data processing, and other related services.</p>
-                    <a href="#"
+                    <a href="./about_us.html"
                         class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                         Read more
                         <svg class="w-3.5 h-3.5 ml-2 rtl:rotate-180" aria-hidden="true"
@@ -134,27 +150,27 @@
                     </a>
                 </div>
                 <div>
-                    <img src="./assets/images/about-us.jpg" class="rounded" alt="" />
+                    <img src="./assets/images/about-us.webp" class="rounded" alt="" />
                 </div>
             </div>
     </section>
 
 
     <!-- Director Message -->
-    <section class="bg-blue-100 py-12 px-4 md:px-8 lg:px-20 mt-20">
+    <section class="bg-blue-100 py-12 px-4 md:px-8 lg:px-20 mt-10">
         <h2 class="md:text-3xl text-xl text-center font-medium tracking-tight text-gray-900 mb-7">
             Director's Message (Vision and Objectives)</h2>
         <div class="max-w-4xl mx-auto bg-white shadow-md rounded-xl p-8">
             <div class="flex flex-col md:flex-row items-center gap-6 mb-7 items-center">
                 <!-- Director's image -->
-                <img class="w-16 h-16 rounded-full object-cover ring-4 ring-blue-500" src="./assets/images/profile.png"
+                <img class="w-16 h-16 rounded-full object-cover ring-4 ring-blue-500" src="./assets/images/profile.webp"
                     alt="Director Photo" />
 
                 <div>
                     <!-- Name & Title -->
                     <h2 class="md:text-xl text-sm md:text-left text-center font-medium text-gray-900">
-                        Dr. Jane Smith</h2>
-                    <p class="text-sm text-gray-400 md:text-left text-center">Director, XYZ Institute</p>
+                        Mr Sahil Mangla</h2>
+                    <p class="text-sm text-gray-400 md:text-left text-center">Director</p>
                 </div>
             </div>
             <div class="message">
@@ -195,15 +211,14 @@
         </div>
     </section>
 
-    <!-- ABOUT US -->
-    <section class="max-w-screen-xl mx-auto p-4 about-us mt-20">
+    <section class="max-w-screen-xl mx-auto p-4 mt-10">
 
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-14">
             <div class="bg-blue-100 p-4">
                 <h2
                     class="md:text-3xl border-l-4 border-blue-400 text-xl pl-2 font-medium tracking-tight text-gray-900 mb-7">
                     Recent Activities</h2>
-                <ul class="max-w-md md:text-lg text-sm space-y-1 text-gray-500 list-inside">
+                <ul class="max-w-md md:text-[0.95rem] text-sm space-y-1 text-gray-500 list-inside">
                     <li class="flex items-center">
                         <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -258,24 +273,24 @@
                 <h2
                     class="md:text-3xl border-l-4 border-blue-400 text-xl pl-2 font-medium tracking-tight text-gray-900 mb-7">
                     KGM Presence</h2>
-                <img src="./assets/images/pan-india.png" alt='india map' class="w-full" />
+                <img src="./assets/images/pan-india.webp" alt='india map' class="w-full" />
             </div>
             <div class="bg-blue-100 p-4">
                 <h2
                     class="md:text-3xl border-l-4 border-blue-400 text-xl pl-2 font-medium tracking-tight text-gray-900 mb-7">
                     Placement Partners</h2>
-                <img src="./assets/images/placement-partner.jpg" alt='india map' class="w-full" />
+                <img src="./assets/images/placement-partner.webp" alt='india map' class="w-full" />
             </div>
         </div>
     </section>
 
     <!-- Affiliated With -->
-    <section class="max-w-screen-xl mx-auto p-4 about-us mt-20">
+    <section class="max-w-screen-xl mx-auto p-4 mt-10">
         <h2 class="md:text-3xl text-xl text-center font-medium tracking-tight text-gray-900 mb-7">
             Our Affiliations</h2>
         <div class="overflow-hidden whitespace-nowrap bg-blue-100 py-2">
             <div class="marquee text-gray-800 font-medium">
-                <div class="flex gap-8 items-center">
+                <div class="flex gap-8">
                     <img class="w-28" src="./assets/images/affiliations/block1.png" alt="logo-affiliations" />
                     <img class="w-28" src="./assets/images/affiliations/block2.png" alt="logo-affiliations" />
                     <img class="w-28" src="./assets/images/affiliations/block3.png" alt="logo-affiliations" />
@@ -288,7 +303,7 @@
                     <img class="w-28" src="./assets/images/affiliations/img-4.png" alt="logo-affiliations" />
                     <img class="w-28" src="./assets/images/affiliations/img-5.png" alt="logo-affiliations" />
                     <img class="w-28" src="./assets/images/affiliations/img-6.png" alt="logo-affiliations" />
-                    <img class="w-28" src="./assets/images/affiliations/img-7.png" alt="logo-affiliations" />
+                    <img class="w-28" src="./assets/images/affiliations/img-7.jpg" alt="logo-affiliations" />
                     <img class="w-28" src="./assets/images/affiliations/lsc.png" alt="logo-affiliations" />
                 </div>
             </div>

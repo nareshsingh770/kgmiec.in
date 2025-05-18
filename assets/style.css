@@ -12,6 +12,14 @@
 .marquee:hover {
   animation-play-state: paused;
 }
+.tag-line{
+  font-size:0.5rem;
+}
+.background-header {
+  background-image: url("./images/header_background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @keyframes scroll-left {
   0% {
